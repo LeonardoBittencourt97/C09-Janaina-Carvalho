@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Image from "next/image";
 import { LAWYER_PROFILE, OFFICE_INFO } from "@/lib/data";
 import { GraduationCap, Compass, Eye, ShieldCheck, MessageSquare, ChevronDown, Sparkles } from "lucide-react";
 import { gsap } from "gsap";
@@ -265,14 +264,10 @@ export function About() {
               <div className="relative w-full aspect-square rounded-3xl overflow-hidden border-2 border-[#782445]/60 shadow-2xl hover-lift group bg-[#782445]">
                 {/* Feixe de luz suave ao passar o mouse */}
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/15 to-transparent z-20 pointer-events-none" />
-                <Image
-                  src={LAWYER_PROFILE.photo}
+                <img
+                  src="/Foto_perfil.jpeg"
                   alt={`${LAWYER_PROFILE.name} - ${OFFICE_INFO.oab}`}
-                  fill
-                  priority
-                  unoptimized
-                  className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
-                  sizes="(max-width: 768px) 90vw, 420px"
+                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
                 />
               </div>
 
