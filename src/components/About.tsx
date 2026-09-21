@@ -258,34 +258,42 @@ export function About() {
             )}
           </div>
 
-          {/* Coluna da Imagem Oficial da Dra. Janaina */}
+          {/* Coluna da Imagem / Logo Oficial de Perfil da Dra. Janaina */}
           <div className="lg:col-span-5 order-1 lg:order-2 w-full flex justify-center lg:justify-end">
-            <div ref={photoCardRef} className="w-full max-w-[360px] sm:max-w-[400px] will-change-transform">
-              <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-3xl overflow-hidden border-2 border-[#5B1D33]/60 shadow-2xl hover-lift group bg-[#151A1F]">
-                {/* Feixe de luz suave */}
-                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent z-20 pointer-events-none" />
+            <div ref={photoCardRef} className="w-full max-w-[380px] sm:max-w-[420px] will-change-transform flex flex-col items-center">
+              {/* Card 1:1 com aspect-square perfeito para a logo quadrada oficial */}
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden border-2 border-[#5B1D33]/50 shadow-2xl hover-lift group bg-[#5B1D33]">
+                {/* Feixe de luz suave ao passar o mouse */}
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/15 to-transparent z-20 pointer-events-none" />
                 <Image
                   src={LAWYER_PROFILE.photo}
-                  alt={LAWYER_PROFILE.name}
+                  alt={`${LAWYER_PROFILE.name} - ${OFFICE_INFO.oab}`}
                   fill
                   priority
-                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
                   sizes="(max-width: 768px) 90vw, 420px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent pointer-events-none" />
+              </div>
 
-                {/* Badge Inferior com Nome e OAB */}
-                <div className="absolute bottom-5 left-5 right-5 text-white z-10 pointer-events-none">
-                  <span className="text-[0.6875rem] uppercase tracking-widest text-[#E8C5D0] font-heading font-semibold block mb-1">
-                    Advogada Titular • {OFFICE_INFO.oab}
+              {/* Card de credibilidade e atendimento exclusivo posicionado abaixo da logo */}
+              <div className="w-full mt-4 p-3.5 sm:p-4 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/40 shadow-xs flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2.5">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                   </span>
-                  <p className="font-heading text-xl sm:text-2xl font-bold leading-tight text-white drop-shadow-sm">
-                    {LAWYER_PROFILE.name}
-                  </p>
-                  <p className="text-xs text-gray-200 font-body mt-1 leading-relaxed">
-                    Especialista em Direito de Família, Divórcio e Partilha de Bens
-                  </p>
+                  <div>
+                    <span className="font-heading text-xs font-bold text-[var(--text-main)] block">
+                      Atendimento Especializado
+                    </span>
+                    <span className="font-body text-[11px] text-[var(--text-muted)]">
+                      Direto com a Advogada Titular
+                    </span>
+                  </div>
                 </div>
+                <span className="text-[11px] font-heading font-semibold text-[#5B1D33] dark:text-[#E8C5D0] bg-[#5B1D33]/10 dark:bg-[#5B1D33]/30 px-2.5 py-1 rounded-full border border-[#5B1D33]/20 shrink-0">
+                  {OFFICE_INFO.oab}
+                </span>
               </div>
             </div>
           </div>
