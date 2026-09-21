@@ -257,40 +257,14 @@ export function About() {
             )}
           </div>
 
-          {/* Coluna da Imagem / Logo Oficial de Perfil da Dra. Janaina */}
+          {/* Coluna da Imagem Oficial: apenas a imagem, sem nenhum outro elemento */}
           <div className="lg:col-span-5 order-1 lg:order-2 w-full flex justify-center lg:justify-end">
-            <div ref={photoCardRef} className="w-full max-w-[380px] sm:max-w-[420px] will-change-transform flex flex-col items-center">
-              {/* Card 1:1 com aspect-square perfeito para a logo quadrada oficial */}
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden border-2 border-[#782445]/60 shadow-2xl hover-lift group bg-[#782445]">
-                {/* Feixe de luz suave ao passar o mouse */}
-                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/15 to-transparent z-20 pointer-events-none" />
-                <img
-                  src="/Foto_perfil.jpeg"
-                  alt={`${LAWYER_PROFILE.name} - ${OFFICE_INFO.oab}`}
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
-                />
-              </div>
-
-              {/* Card de credibilidade e atendimento exclusivo posicionado abaixo da logo */}
-              <div className="w-full mt-4 p-3.5 sm:p-4 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/40 shadow-xs flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2.5">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                  </span>
-                  <div>
-                    <span className="font-heading text-xs font-bold text-[var(--text-main)] block">
-                      Atendimento Especializado
-                    </span>
-                    <span className="font-body text-[11px] text-[var(--text-muted)]">
-                      Direto com a Advogada Titular
-                    </span>
-                  </div>
-                </div>
-                <span className="text-[11px] font-heading font-semibold text-[#5B1D33] dark:text-[#E8C5D0] bg-[#5B1D33]/10 dark:bg-[#5B1D33]/30 px-2.5 py-1 rounded-full border border-[#5B1D33]/20 shrink-0">
-                  {OFFICE_INFO.oab}
-                </span>
-              </div>
+            <div ref={photoCardRef} className="w-full max-w-[380px] sm:max-w-[420px]">
+              <img
+                src="/foto_perfil.jpeg"
+                alt="Dra. Janaina Manhani de Carvalho"
+                className="w-full h-auto aspect-square object-contain rounded-3xl shadow-xl block"
+              />
             </div>
           </div>
         </div>
