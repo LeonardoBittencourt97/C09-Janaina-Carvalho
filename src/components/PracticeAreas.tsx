@@ -115,17 +115,17 @@ export function PracticeAreas() {
         >
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="bullet-indicator text-[#A6766A]" />
-              <span className="font-heading uppercase text-xs tracking-widest text-[#A6766A] font-bold">
+              <span className="bullet-indicator text-[#A64B6A]" />
+              <span className="font-heading uppercase text-xs tracking-widest text-[#A64B6A] font-bold">
                 02 / Especialidades Jurídicas
               </span>
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[var(--text-main)] font-semibold">
-              Áreas de Atuação
+              Áreas de Atuação em Direito de Família
             </h2>
           </div>
           <p className="font-body text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
-            Abordagem técnica individualizada e focada nas soluções mais seguras para o seu trabalho, sua família e seus contratos.
+            Abordagem técnica individualizada e humanizada, focada nas soluções mais seguras para você, seus filhos e seu patrimônio.
           </p>
         </div>
 
@@ -142,15 +142,15 @@ export function PracticeAreas() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-heading text-2xl font-bold text-[#A6766A]">
+                    <span className="font-heading text-2xl font-bold text-[#5B1D33] dark:text-[#E8C5D0]">
                       {area.code}.
                     </span>
-                    <div className="w-9 h-9 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center text-[#A6766A] group-hover:bg-[#A6766A] group-hover:text-white transition-colors duration-300 shadow-2xs">
+                    <div className="w-9 h-9 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center text-[#5B1D33] dark:text-[#E8C5D0] group-hover:bg-[#5B1D33] group-hover:text-white transition-colors duration-300 shadow-2xs">
                       <Scale className="w-4 h-4" />
                     </div>
                   </div>
 
-                  <span className="font-heading text-xs uppercase tracking-wider text-[#A6766A] font-semibold block mb-1">
+                  <span className="font-heading text-xs uppercase tracking-wider text-[#A64B6A] font-semibold block mb-1">
                     {area.subtitle}
                   </span>
 
@@ -165,7 +165,7 @@ export function PracticeAreas() {
                   <div className="space-y-2.5 pt-4 border-t border-[var(--border-subtle)]/20">
                     {area.highlights.map((item, hIdx) => (
                       <div key={hIdx} className="flex items-start gap-2.5 text-xs sm:text-sm font-body text-[var(--text-main)]">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#A6766A] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#A64B6A] flex-shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -174,10 +174,10 @@ export function PracticeAreas() {
 
                 <div className="pt-6 mt-6 border-t border-[var(--border-subtle)]/25 flex items-center justify-between">
                   <a
-                    href={`https://wa.me/5517981217474?text=Ol%C3%A1%2C%20Dra.%20Sloane.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
+                    href={`https://wa.me/5541996214317?text=Ol%C3%A1%2C%20Dra.%20Janaina.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-heading font-semibold text-[#A6766A] hover:text-[var(--text-main)] transition-colors group/link"
+                    className="inline-flex items-center gap-1.5 text-xs font-heading font-semibold text-[#5B1D33] dark:text-[#E8C5D0] hover:text-[#A64B6A] transition-colors group/link"
                   >
                     <span>Consultar sobre este tema</span>
                     <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -195,19 +195,19 @@ export function PracticeAreas() {
             {bottomRowAreas.map((area) => (
               <div
                 key={area.id}
-                className="h-full p-6 sm:p-8 rounded-2xl bg-[var(--bg-card)] border-2 border-[#D4A396]/70 shadow-2xl flex flex-col justify-between group transition-all duration-300"
+                className="h-full p-6 sm:p-8 rounded-2xl bg-[var(--bg-card)] border-2 border-[#5B1D33]/60 shadow-2xl flex flex-col justify-between group transition-all duration-300"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-heading text-2xl font-bold text-[#A6766A]">
+                    <span className="font-heading text-2xl font-bold text-[#5B1D33] dark:text-[#E8C5D0]">
                       {area.code}.
                     </span>
-                    <div className="w-9 h-9 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center text-[#A6766A] group-hover:bg-[#A6766A] group-hover:text-white transition-colors duration-300 shadow-2xs">
+                    <div className="w-9 h-9 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center text-[#5B1D33] dark:text-[#E8C5D0] group-hover:bg-[#5B1D33] group-hover:text-white transition-colors duration-300 shadow-2xs">
                       <Scale className="w-4 h-4" />
                     </div>
                   </div>
 
-                  <span className="font-heading text-xs uppercase tracking-wider text-[#A6766A] font-semibold block mb-1">
+                  <span className="font-heading text-xs uppercase tracking-wider text-[#A64B6A] font-semibold block mb-1">
                     {area.subtitle}
                   </span>
 
@@ -222,7 +222,7 @@ export function PracticeAreas() {
                   <div className="space-y-2.5 pt-4 border-t border-[var(--border-subtle)]/20">
                     {area.highlights.map((item, hIdx) => (
                       <div key={hIdx} className="flex items-start gap-2.5 text-xs sm:text-sm font-body text-[var(--text-main)]">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#A6766A] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#A64B6A] flex-shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -231,10 +231,10 @@ export function PracticeAreas() {
 
                 <div className="pt-6 mt-6 border-t border-[var(--border-subtle)]/25 flex items-center justify-between">
                   <a
-                    href={`https://wa.me/5517981217474?text=Ol%C3%A1%2C%20Dra.%20Sloane.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
+                    href={`https://wa.me/5541996214317?text=Ol%C3%A1%2C%20Dra.%20Janaina.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-heading font-semibold text-[#A6766A] hover:text-[var(--text-main)] transition-colors group/link"
+                    className="inline-flex items-center gap-1.5 text-xs font-heading font-semibold text-[#5B1D33] dark:text-[#E8C5D0] hover:text-[#A64B6A] transition-colors group/link"
                   >
                     <span>Consultar sobre este tema</span>
                     <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -256,7 +256,7 @@ export function PracticeAreas() {
               <div
                 key={area.id}
                 className={`rounded-2xl border transition-all duration-300 bg-[var(--bg-card)] overflow-hidden ${
-                  isExpanded ? "border-[#A6766A] shadow-md" : "border-[var(--border-subtle)]/35 shadow-2xs"
+                  isExpanded ? "border-[#5B1D33] shadow-md" : "border-[var(--border-subtle)]/35 shadow-2xs"
                 }`}
               >
                 {/* Linha Resumida Sem Truncate: visualiza título completo com quebra natural */}
@@ -265,14 +265,14 @@ export function PracticeAreas() {
                   className="p-3.5 flex items-center justify-between gap-3 cursor-pointer select-none"
                 >
                   <div className="flex items-start gap-2.5 min-w-0 flex-1">
-                    <span className="font-heading text-sm font-bold text-[#A6766A] flex-shrink-0 mt-0.5">
+                    <span className="font-heading text-sm font-bold text-[#5B1D33] dark:text-[#E8C5D0] flex-shrink-0 mt-0.5">
                       {area.code}
                     </span>
                     <div className="min-w-0 flex-1">
                       <h3 className="font-heading text-sm font-bold text-[var(--text-main)] leading-snug break-words">
                         {area.title}
                       </h3>
-                      <span className="text-[0.6875rem] font-heading text-[#A6766A] block mt-0.5 break-words">
+                      <span className="text-[0.6875rem] font-heading text-[#A64B6A] block mt-0.5 break-words">
                         {area.subtitle}
                       </span>
                     </div>
@@ -282,8 +282,8 @@ export function PracticeAreas() {
                     type="button"
                     className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[0.6875rem] font-heading font-semibold transition-all flex-shrink-0 self-center ${
                       isExpanded
-                        ? "bg-[#A6766A] text-white"
-                        : "bg-[var(--bg-secondary)] text-[#A6766A] border border-[#A6766A]/30"
+                        ? "bg-[#5B1D33] text-white"
+                        : "bg-[var(--bg-secondary)] text-[#5B1D33] dark:text-[#E8C5D0] border border-[#A64B6A]/30"
                     }`}
                     aria-expanded={isExpanded}
                   >
@@ -306,7 +306,7 @@ export function PracticeAreas() {
                     <div className="space-y-2 pt-1">
                       {area.highlights.map((item, hIdx) => (
                         <div key={hIdx} className="flex items-start gap-2 text-xs font-body text-[var(--text-main)]">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#A6766A] flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#A64B6A] flex-shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </div>
                       ))}
@@ -314,10 +314,10 @@ export function PracticeAreas() {
 
                     <div className="pt-3 border-t border-[var(--border-subtle)]/20 flex justify-end">
                       <a
-                        href={`https://wa.me/5517981217474?text=Ol%C3%A1%2C%20Dra.%20Sloane.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
+                        href={`https://wa.me/5541996214317?text=Ol%C3%A1%2C%20Dra.%20Janaina.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20${encodeURIComponent(area.title)}.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-pill bg-[#A6766A] hover:bg-[#8d5e53] text-white py-2 px-4 text-xs gap-1.5 inline-flex items-center"
+                        className="btn-pill bg-[#5B1D33] hover:bg-[#360F1D] text-white py-2 px-4 text-xs gap-1.5 inline-flex items-center"
                       >
                         <MessageSquare className="w-3.5 h-3.5" />
                         <span>Consultar no WhatsApp</span>
@@ -334,19 +334,19 @@ export function PracticeAreas() {
         <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/40 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <h4 className="font-heading text-lg font-bold text-[var(--text-main)]">
-              Precisa de orientação jurídica personalizada em outra matéria cível ou trabalhista?
+              Precisa de orientação jurídica em divórcio, partilha de bens ou pensão alimentícia?
             </h4>
             <p className="font-body text-xs sm:text-sm text-[var(--text-muted)]">
-              Agende uma análise preventiva com a Dra. Sloane Ferreira de Andrade.
+              Agende uma análise individualizada e confidencial com a Dra. Janaina Manhani de Carvalho.
             </p>
           </div>
           <a
             href={OFFICE_INFO.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-pill bg-white dark:bg-[#151A1F] text-[#1A1D20] dark:text-white border-2 border-[#A6766A] hover:bg-[#A6766A] hover:text-white dark:hover:bg-[#A6766A] dark:hover:text-white gap-2 shadow-xs text-xs sm:text-sm whitespace-nowrap flex-shrink-0 hover-lift transition-all"
+            className="btn-pill bg-white dark:bg-[#151A1F] text-[#212121] dark:text-white border-2 border-[#5B1D33] hover:bg-[#5B1D33] hover:text-white dark:hover:bg-[#5B1D33] dark:hover:text-white gap-2 shadow-xs text-xs sm:text-sm whitespace-nowrap flex-shrink-0 hover-lift transition-all"
           >
-            <MessageSquare className="w-4 h-4 text-[#A6766A] group-hover:text-white" />
+            <MessageSquare className="w-4 h-4 text-[#5B1D33] group-hover:text-white" />
             <span>Falar com a Advogada</span>
           </a>
         </div>

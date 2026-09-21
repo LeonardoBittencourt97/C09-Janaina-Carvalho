@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { OFFICE_INFO } from "@/lib/data";
@@ -45,14 +45,14 @@ export function FloatingWhatsApp() {
         }`}
       >
         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping flex-shrink-0" />
-        <span>Conversar com a Dra. Sloane</span>
+        <span>Conversar com a Dra. Janaina</span>
       </div>
 
       <a
         href={OFFICE_INFO.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Atendimento direto via WhatsApp com a Dra. Sloane Andrade"
+        aria-label="Atendimento direto via WhatsApp com a Dra. Janaina Carvalho"
         className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 relative"
       >
         <WhatsAppIcon className="w-7 h-7 text-white" />

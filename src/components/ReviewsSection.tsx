@@ -70,8 +70,8 @@ export function ReviewsSection() {
         >
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="bullet-indicator text-[#A6766A]" />
-              <span className="font-heading uppercase text-xs tracking-widest text-[#A6766A] font-bold">
+              <span className="bullet-indicator text-[#A64B6A]" />
+              <span className="font-heading uppercase text-xs tracking-widest text-[#A64B6A] font-bold">
                 04 / Reconhecimento Público
               </span>
             </div>
@@ -93,7 +93,7 @@ export function ReviewsSection() {
             </div>
             <div className="h-8 w-[1px] bg-[var(--border-subtle)]/30" />
             <div className="font-heading text-xl font-bold text-[var(--text-main)]">
-              +70 <span className="text-xs text-[var(--text-muted)] font-normal">opiniões públicas</span>
+              30 <span className="text-xs text-[var(--text-muted)] font-normal">opiniões públicas</span>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export function ReviewsSection() {
           {duplicatedReviews.map((rev, idx) => (
             <div
               key={`${rev.id}-${idx}`}
-              className="w-[320px] sm:w-[380px] p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/35 shadow-xs flex flex-col justify-between flex-shrink-0 hover:border-[#A6766A] transition-colors"
+              className="w-[320px] sm:w-[380px] p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/35 shadow-xs flex flex-col justify-between flex-shrink-0 hover:border-[#5B1D33] transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -127,7 +127,7 @@ export function ReviewsSection() {
               <div className="pt-3 border-t border-[var(--border-subtle)]/20 flex items-center justify-between text-xs font-heading">
                 <span className="font-bold text-[var(--text-main)]">{rev.author}</span>
                 <span className="text-[0.6875rem] text-[var(--text-muted)] flex items-center gap-1">
-                  <MessageSquareQuote className="w-3.5 h-3.5 text-[#A6766A]" />
+                  <MessageSquareQuote className="w-3.5 h-3.5 text-[#A64B6A]" />
                   <span>{rev.source}</span>
                 </span>
               </div>

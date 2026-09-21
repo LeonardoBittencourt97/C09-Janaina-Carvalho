@@ -117,8 +117,8 @@ export function HowWeWork() {
         >
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="bullet-indicator text-[#A6766A]" />
-              <span className="font-heading uppercase text-xs tracking-widest text-[#A6766A] font-bold">
+              <span className="bullet-indicator text-[#A64B6A]" />
+              <span className="font-heading uppercase text-xs tracking-widest text-[#A64B6A] font-bold">
                 05 / Clareza Procedimental
               </span>
             </div>
@@ -127,7 +127,7 @@ export function HowWeWork() {
             </h2>
           </div>
           <p className="font-body text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
-            Uma trajetória transparente, sem juridiquês inacessível e com total previsibilidade sobre cada fase do seu procedimento.
+            Uma trajetória transparente, acolhedora, sem juridiquês inacessível e com total previsibilidade sobre cada fase do seu processo familiar.
           </p>
         </div>
 
@@ -136,10 +136,10 @@ export function HowWeWork() {
           {/* Linha guia de fundo (cinza sutil) */}
           <div className="hidden lg:block absolute top-12 left-8 right-8 h-[2px] bg-[var(--border-subtle)]/25 -z-10" />
 
-          {/* Linha de progresso Rose Gold conectora */}
+          {/* Linha de progresso Marsala conectora */}
           <div
             ref={progressBarRef}
-            className="hidden lg:block absolute top-12 left-8 right-8 h-[2px] bg-gradient-to-r from-[#A6766A] via-[#D4A396] to-[#8d5e53] -z-10 will-change-transform"
+            className="hidden lg:block absolute top-12 left-8 right-8 h-[2px] bg-gradient-to-r from-[#5B1D33] via-[#A64B6A] to-[#360F1D] -z-10 will-change-transform"
           />
 
           {/* 4 Passos Estruturados */}
@@ -147,21 +147,21 @@ export function HowWeWork() {
             {WORK_STEPS.map((step, idx) => (
               <div
                 key={idx}
-                className="step-card-item h-full p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/35 shadow-xs flex flex-col justify-between relative group hover:border-[#A6766A] hover:shadow-md hover-lift transition-all duration-300 will-change-transform"
+                className="step-card-item h-full p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--border-subtle)]/35 shadow-xs flex flex-col justify-between relative group hover:border-[#5B1D33] hover:shadow-md hover-lift transition-all duration-300 will-change-transform"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center border border-[#D4A396]/40 group-hover:bg-[#A6766A] group-hover:text-white transition-all duration-300 shadow-2xs">
-                      <span className="font-heading text-xl font-bold text-[#A6766A] group-hover:text-white transition-colors">
+                    <div className="w-11 h-11 rounded-xl bg-[var(--bg-secondary)] flex items-center justify-center border border-[#A64B6A]/30 group-hover:bg-[#5B1D33] group-hover:text-white transition-all duration-300 shadow-2xs">
+                      <span className="font-heading text-xl font-bold text-[#5B1D33] dark:text-[#E8C5D0] group-hover:text-white transition-colors">
                         {step.number}
                       </span>
                     </div>
                     {idx < WORK_STEPS.length - 1 && (
-                      <ArrowRight className="hidden lg:block w-4 h-4 text-[var(--border-subtle)]/60 group-hover:translate-x-1 group-hover:text-[#A6766A] transition-all" />
+                      <ArrowRight className="hidden lg:block w-4 h-4 text-[var(--border-subtle)]/60 group-hover:translate-x-1 group-hover:text-[#A64B6A] transition-all" />
                     )}
                   </div>
 
-                  <span className="font-heading text-xs uppercase tracking-wider text-[#A6766A] font-semibold block mb-1">
+                  <span className="font-heading text-xs uppercase tracking-wider text-[#A64B6A] font-semibold block mb-1">
                     {step.subtitle}
                   </span>
 
@@ -183,7 +183,7 @@ export function HowWeWork() {
             href={OFFICE_INFO.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-pill bg-[#A6766A] hover:bg-[#8d5e53] text-white gap-2 shadow-xs text-sm inline-flex items-center"
+            className="btn-pill bg-[#5B1D33] hover:bg-[#360F1D] text-white gap-2 shadow-xs text-sm inline-flex items-center"
           >
             <MessageSquare className="w-4 h-4 fill-white" />
             <span>Iniciar Primeiro Contato via WhatsApp</span>

@@ -1,32 +1,31 @@
-﻿import { OFFICE_INFO, LAWYER_PROFILE } from "./data";
+import { OFFICE_INFO, LAWYER_PROFILE } from "./data";
 
 export function getLegalServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "@id": "https://sloaneandrade-adv.vercel.app/#legalservice",
+    "@id": "https://janainacarvalho-adv.vercel.app/#legalservice",
     name: OFFICE_INFO.name,
-    alternateName: "Sloane Andrade Advocacia",
+    alternateName: "Janaina Carvalho Advocacia de Família",
     description:
-      "Advocacia especializada em Direito do Trabalho, Previdenciário/Acidentário, Direito Civil e Família em Guaíra/SP e região. Mais de 10 anos de experiência e atendimento humanizado.",
-    url: "https://sloaneandrade-adv.vercel.app",
-    telephone: "+5517981217474",
-    email: OFFICE_INFO.email,
+      "Advocacia especializada em Direito de Família, Divórcio Consensual e Litigioso, Pensão Alimentícia, Guarda e Partilha de Bens em Curitiba/PR e em todo o Brasil.",
+    url: "https://janainacarvalho-adv.vercel.app",
+    telephone: "+5541996214317",
     priceRange: "$$",
-    image: "https://sloaneandrade-adv.vercel.app/logo_semfundo_escritapreta_paramodoclaro.png",
-    logo: "https://sloaneandrade-adv.vercel.app/logo_semfundo_escritapreta_paramodoclaro.png",
+    image: "https://janainacarvalho-adv.vercel.app/logo_semfundo_escritapreta_paramodoclaro.png",
+    logo: "https://janainacarvalho-adv.vercel.app/logo_semfundo_escritapreta_paramodoclaro.png",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "R. 14 B, 01077 - Joaquim Pereira Lelis",
-      addressLocality: "Guaíra",
-      addressRegion: "SP",
-      postalCode: "14790-000",
+      streetAddress: "R. Ébano Pereira, 60 - Sl 2004 - Centro",
+      addressLocality: "Curitiba",
+      addressRegion: "PR",
+      postalCode: "80410-240",
       addressCountry: "BR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: -20.3181,
-      longitude: -48.3106,
+      latitude: -25.4290,
+      longitude: -49.2730,
     },
     openingHoursSpecification: [
       {
@@ -43,9 +42,7 @@ export function getLegalServiceSchema() {
       },
     ],
     sameAs: [
-      OFFICE_INFO.social.instagram,
-      OFFICE_INFO.social.facebook,
-      OFFICE_INFO.social.linkedin,
+      OFFICE_INFO.whatsappUrl,
     ],
     employee: [
       {

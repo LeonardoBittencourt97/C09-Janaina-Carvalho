@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -60,14 +60,14 @@ export function Navbar() {
 
   // Escolhe a logo apropriada de acordo com o fundo/tema
   const currentLogo = !isScrolled
-    ? "/logo_semfundo_escritabranca_paramodoescuro.png"
+    ? "/logo_semfundo_escritapreta_paramodoescuro.png"
     : theme === "dark"
-    ? "/logo_semfundo_escritabranca_paramodoescuro.png"
+    ? "/logo_semfundo_escritapreta_paramodoescuro.png"
     : "/logo_semfundo_escritapreta_paramodoclaro.png";
 
   const drawerLogo =
     theme === "dark"
-      ? "/logo_semfundo_escritabranca_paramodoescuro.png"
+      ? "/logo_semfundo_escritapreta_paramodoescuro.png"
       : "/logo_semfundo_escritapreta_paramodoclaro.png";
 
   const closeMobileMenu = () => {
@@ -84,7 +84,7 @@ export function Navbar() {
           <div className="relative h-11 sm:h-13 w-40 sm:w-48 transition-transform duration-300 group-hover:scale-105">
             <Image
               src={currentLogo}
-              alt="Sloane Andrade Advocacia"
+              alt="Janaina Carvalho Advocacia de Família"
               fill
               priority
               className="object-contain object-left drop-shadow-md"
@@ -114,7 +114,7 @@ export function Navbar() {
                 <div className="relative h-12 w-60 xl:w-68 transition-transform duration-300 group-hover:scale-105">
                   <Image
                     src={currentLogo}
-                    alt="Sloane Andrade Advocacia"
+                    alt="Janaina Carvalho Advocacia de Família"
                     fill
                     priority
                     className="object-contain object-left drop-shadow-md"
@@ -130,7 +130,7 @@ export function Navbar() {
                 !isScrolled ? "text-white/95" : "text-[var(--text-main)]"
               }`}
             >
-              <Link href="#inicio" className="transition-colors editorial-link hover:text-[var(--accent)] font-semibold">
+              <Link href="#inicio" className="transition-colors editorial-link hover:text-[#A64B6A] font-semibold">
                 Início
               </Link>
 
@@ -144,13 +144,13 @@ export function Navbar() {
                 <button
                   type="button"
                   onClick={() => setOfficeDropdownOpen(!officeDropdownOpen)}
-                  className="inline-flex items-center gap-1.5 transition-colors py-2 focus:outline-none cursor-pointer hover:text-[var(--accent)] font-semibold"
+                  className="inline-flex items-center gap-1.5 transition-colors py-2 focus:outline-none cursor-pointer hover:text-[#A64B6A] font-semibold"
                   aria-expanded={officeDropdownOpen}
                 >
                   <span className="editorial-link">O Escritório</span>
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                      officeDropdownOpen ? "rotate-180 text-[var(--accent)]" : "opacity-70"
+                      officeDropdownOpen ? "rotate-180 text-[#A64B6A]" : "opacity-70"
                     }`}
                   />
                 </button>
@@ -164,14 +164,14 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           A Advogada
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
-                          Trajetória, MBA e histórico profissional
+                          Dra. Janaina Manhani de Carvalho
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
 
                     <Link
@@ -180,14 +180,14 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           Como Funciona
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
                           Passo a passo do nosso atendimento
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
 
                     <Link
@@ -196,14 +196,14 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           Avaliações (Google)
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
-                          Nota 5.0 estrelas (+70 opiniões)
+                          Nota 5.0 estrelas (30 avaliações)
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
                   </div>
                 )}
@@ -219,13 +219,13 @@ export function Navbar() {
                 <button
                   type="button"
                   onClick={() => setAreasDropdownOpen(!areasDropdownOpen)}
-                  className="inline-flex items-center gap-1.5 transition-colors py-2 focus:outline-none cursor-pointer hover:text-[var(--accent)] font-semibold"
+                  className="inline-flex items-center gap-1.5 transition-colors py-2 focus:outline-none cursor-pointer hover:text-[#A64B6A] font-semibold"
                   aria-expanded={areasDropdownOpen}
                 >
                   <span className="editorial-link">Atuação & Conteúdo</span>
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                      areasDropdownOpen ? "rotate-180 text-[var(--accent)]" : "opacity-70"
+                      areasDropdownOpen ? "rotate-180 text-[#A64B6A]" : "opacity-70"
                     }`}
                   />
                 </button>
@@ -239,14 +239,14 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           Áreas de Atuação
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
-                          Trabalhista, Previdenciário, Família e Cível
+                          Divórcio, Pensão, Guarda e Bens
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
 
                     <Link
@@ -255,14 +255,14 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           Conteúdo Educativo
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
-                          Artigos e orientações éticas CFOAB
+                          Artigos e esclarecimentos éticos CFOAB
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
 
                     <Link
@@ -271,20 +271,20 @@ export function Navbar() {
                       className="p-3 rounded-xl hover:bg-[var(--bg-secondary)]/80 flex items-center justify-between group transition-colors"
                     >
                       <div>
-                        <span className="font-heading font-bold text-sm block group-hover:text-[#A6766A]">
+                        <span className="font-heading font-bold text-sm block group-hover:text-[#5B1D33]">
                           Dúvidas Frequentes (FAQ)
                         </span>
                         <span className="text-[0.6875rem] text-[var(--text-muted)] font-body">
-                          Respostas diretas para as dúvidas comuns
+                          Respostas diretas sobre causas de família
                         </span>
                       </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#A6766A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-[#5B1D33] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="#contato" className="transition-colors editorial-link hover:text-[var(--accent)] font-semibold">
+              <Link href="#contato" className="transition-colors editorial-link hover:text-[#A64B6A] font-semibold">
                 Contato
               </Link>
             </nav>
@@ -341,7 +341,7 @@ export function Navbar() {
               <div className="relative h-10 w-40">
                 <Image
                   src={drawerLogo}
-                  alt="Sloane Andrade Advocacia"
+                  alt="Janaina Carvalho Advocacia de Família"
                   fill
                   className="object-contain object-left"
                   sizes="160px"
@@ -357,14 +357,14 @@ export function Navbar() {
               </button>
             </div>
 
-            <div className="my-4 flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#D4A396]/40 bg-[var(--bg-secondary)]/70 text-xs font-heading text-[#A6766A]">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#A6766A]" />
-              <span>{OFFICE_INFO.oab} • OAB/SP</span>
+            <div className="my-4 flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#D8B4C0]/40 bg-[var(--bg-secondary)] text-xs font-heading text-[#5B1D33] font-semibold">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#5B1D33]" />
+              <span>{OFFICE_INFO.oab} • Curitiba/PR</span>
             </div>
 
             {/* Navegação Mobile Enxuta com Submenus */}
             <nav className="flex flex-col space-y-2 font-heading text-base font-medium text-[var(--text-main)] pt-2">
-              <Link href="#inicio" onClick={closeMobileMenu} className="py-2 hover:text-[#A6766A] border-b border-[var(--border-subtle)]/15">
+              <Link href="#inicio" onClick={closeMobileMenu} className="py-2 hover:text-[#5B1D33] border-b border-[var(--border-subtle)]/15">
                 Início
               </Link>
 
@@ -373,21 +373,21 @@ export function Navbar() {
                 <button
                   type="button"
                   onClick={() => setMobileOfficeOpen(!mobileOfficeOpen)}
-                  className="w-full flex items-center justify-between py-2 text-left hover:text-[#A6766A] cursor-pointer"
+                  className="w-full flex items-center justify-between py-2 text-left hover:text-[#5B1D33] cursor-pointer"
                 >
                   <span>O Escritório</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileOfficeOpen ? "rotate-180 text-[#A6766A]" : ""}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileOfficeOpen ? "rotate-180 text-[#5B1D33]" : ""}`} />
                 </button>
                 {mobileOfficeOpen && (
                   <div className="pl-4 pb-2 space-y-2 text-sm text-[var(--text-muted)] font-body animate-fade-in-down">
-                    <Link href="#sobre" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
-                      • A Advogada & Formação
+                    <Link href="#sobre" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
+                      • A Advogada & Trajetória
                     </Link>
-                    <Link href="#como-atuamos" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
+                    <Link href="#como-atuamos" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
                       • Como Funciona o Atendimento
                     </Link>
-                    <Link href="#avaliacoes" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
-                      • Avaliações do Google (+70)
+                    <Link href="#avaliacoes" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
+                      • Avaliações do Google (30)
                     </Link>
                   </div>
                 )}
@@ -398,31 +398,31 @@ export function Navbar() {
                 <button
                   type="button"
                   onClick={() => setMobileAreasOpen(!mobileAreasOpen)}
-                  className="w-full flex items-center justify-between py-2 text-left hover:text-[#A6766A] cursor-pointer"
+                  className="w-full flex items-center justify-between py-2 text-left hover:text-[#5B1D33] cursor-pointer"
                 >
                   <span>Atuação & Conteúdo</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileAreasOpen ? "rotate-180 text-[#A6766A]" : ""}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileAreasOpen ? "rotate-180 text-[#5B1D33]" : ""}`} />
                 </button>
                 {mobileAreasOpen && (
                   <div className="pl-4 pb-2 space-y-2 text-sm text-[var(--text-muted)] font-body animate-fade-in-down">
-                    <Link href="#atuacao" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
-                      • Áreas de Atuação
+                    <Link href="#atuacao" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
+                      • Áreas de Família & Divórcio
                     </Link>
-                    <Link href="#educativo" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
-                      • Conteúdo Jurídico (CFOAB)
+                    <Link href="#educativo" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
+                      • Conteúdo Educativo (CFOAB)
                     </Link>
-                    <Link href="#faq" onClick={closeMobileMenu} className="block py-1 hover:text-[#A6766A]">
+                    <Link href="#faq" onClick={closeMobileMenu} className="block py-1 hover:text-[#5B1D33]">
                       • Perguntas Frequentes (FAQ)
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="#contato" onClick={closeMobileMenu} className="py-2 hover:text-[#A6766A] border-b border-[var(--border-subtle)]/15">
+              <Link href="#contato" onClick={closeMobileMenu} className="py-2 hover:text-[#5B1D33] border-b border-[var(--border-subtle)]/15">
                 Contato & Localização
               </Link>
               
-              <Link href="/links" onClick={closeMobileMenu} className="py-2 text-[#A6766A] font-semibold">
+              <Link href="/links" onClick={closeMobileMenu} className="py-2 text-[#5B1D33] font-semibold">
                 Link-in-Bio (/links)
               </Link>
             </nav>

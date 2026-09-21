@@ -92,19 +92,19 @@ export function InstitutionalPillars() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between pb-4 border-b border-[var(--border-subtle)]/25 mb-8 text-[var(--text-muted)]">
-          {/* Linha Rose Gold desenhada pelo scroll */}
+          {/* Linha Marsala desenhada pelo scroll */}
           <div
             ref={lineRef}
-            className="absolute -bottom-[1px] left-0 right-0 h-[2px] bg-gradient-to-r from-[#A6766A] via-[#D4A396] to-transparent will-change-transform"
+            className="absolute -bottom-[1px] left-0 right-0 h-[2px] bg-gradient-to-r from-[#5B1D33] via-[#A64B6A] to-transparent will-change-transform"
           />
           <div className="flex items-center gap-2.5">
-            <Scale className="w-4 h-4 text-[#A6766A]" />
+            <Scale className="w-4 h-4 text-[#A64B6A]" />
             <span className="font-heading uppercase text-xs tracking-widest font-bold text-[var(--text-main)]">
               Pilares Institucionais de Atuação
             </span>
           </div>
           <span className="font-heading text-xs tracking-wider text-[var(--text-muted)] hidden sm:inline">
-            Guaíra - SP • Atendimento Presencial e Digital
+            Curitiba - PR • Atendimento Presencial e Digital em Todo o Brasil
           </span>
         </div>
 
@@ -113,10 +113,10 @@ export function InstitutionalPillars() {
           ref={gridRef}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[var(--border-subtle)]/30"
         >
-          {/* 1. Solidez & Prática Forense */}
+          {/* 1. Solidez em Direito de Família */}
           <div className="pillar-item flex flex-col items-start px-0 sm:px-6 pt-6 sm:pt-0 first:pt-0 will-change-transform">
-            <div className="flex items-center gap-2 mb-2 text-[#A6766A]">
-              <Award className="w-5 h-5 text-[#A6766A]" />
+            <div className="flex items-center gap-2 mb-2 text-[#A64B6A]">
+              <Award className="w-5 h-5 text-[#A64B6A]" />
               <span
                 className="metric-counter font-heading text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-main)]"
                 data-target="10"
@@ -127,17 +127,17 @@ export function InstitutionalPillars() {
               </span>
             </div>
             <h3 className="font-heading text-base font-semibold text-[var(--text-main)] mb-1.5">
-              Solidez & Prática Forense
+              Solidez em Direito de Família
             </h3>
             <p className="font-body text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
-              Trajetória consolidada desde 2014, com sólida passagem pela Polícia Civil e atuação contínua em comarcas da região.
+              Mais de uma década de prática jurídica contínua e dedicada, com atuação combativa e consensual nas varas de família.
             </p>
           </div>
 
           {/* 2. Atendimento com a Titular */}
           <div className="pillar-item flex flex-col items-start px-0 sm:px-6 pt-6 sm:pt-0 will-change-transform">
-            <div className="flex items-center gap-2 mb-2 text-[#A6766A]">
-              <UserCheck className="w-5 h-5 text-[#A6766A]" />
+            <div className="flex items-center gap-2 mb-2 text-[#A64B6A]">
+              <UserCheck className="w-5 h-5 text-[#A64B6A]" />
               <span
                 className="metric-counter font-heading text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-main)]"
                 data-target="100"
@@ -151,30 +151,30 @@ export function InstitutionalPillars() {
               Atendimento com a Titular
             </h3>
             <p className="font-body text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
-              Você não conversa com estagiários ou intermediários. Toda a estratégia é desenhada diretamente pela Dra. Sloane Andrade.
+              Você não conversa com intermediários. Toda a condução e estratégia jurídica são traçadas diretamente com a Dra. Janaina Carvalho.
             </p>
           </div>
 
-          {/* 3. Estratégia Sob Medida */}
+          {/* 3. Estratégia Humanizada Sob Medida */}
           <div className="pillar-item flex flex-col items-start px-0 sm:px-6 pt-6 sm:pt-0 will-change-transform">
-            <div className="flex items-center gap-2 mb-2 text-[#A6766A]">
-              <Scale className="w-5 h-5 text-[#A6766A]" />
+            <div className="flex items-center gap-2 mb-2 text-[#A64B6A]">
+              <Scale className="w-5 h-5 text-[#A64B6A]" />
               <span className="font-heading text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-main)]">
                 Sob Medida
               </span>
             </div>
             <h3 className="font-heading text-base font-semibold text-[var(--text-main)] mb-1.5">
-              Estratégia Sob Medida
+              Estratégia Humanizada
             </h3>
             <p className="font-body text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
-              Análise aprofundada da realidade do cliente para buscar a solução mais célere, seja via acordo extrajudicial ou via judicial.
+              Acolhimento emocional e rigor analítico para buscar acordos céleres ou atuar com firmeza em disputas de bens e guarda.
             </p>
           </div>
 
           {/* 4. Confiança Comprovada */}
           <div className="pillar-item flex flex-col items-start px-0 sm:px-6 pt-6 sm:pt-0 will-change-transform">
-            <div className="flex items-center gap-2 mb-2 text-[#A6766A]">
-              <ShieldCheck className="w-5 h-5 text-[#A6766A]" />
+            <div className="flex items-center gap-2 mb-2 text-[#A64B6A]">
+              <ShieldCheck className="w-5 h-5 text-[#A64B6A]" />
               <span
                 className="metric-counter font-heading text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-main)]"
                 data-target="5.0"
@@ -186,10 +186,10 @@ export function InstitutionalPillars() {
               </span>
             </div>
             <h3 className="font-heading text-base font-semibold text-[var(--text-main)] mb-1.5">
-              Confiança Comprovada
+              Confiança no Google
             </h3>
             <p className="font-body text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
-              Nota máxima e reconhecimento de clientes no Google Reviews pela clareza, empatia e dedicação com os mínimos detalhes.
+              Nota máxima e 30 avaliações de clientes ressaltando o lado humano, a transparência e a dedicação total aos processos.
             </p>
           </div>
         </div>
