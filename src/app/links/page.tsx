@@ -87,14 +87,15 @@ export default function LinksPage() {
           </div>
 
           <div className="relative z-10 my-auto py-2 flex flex-col items-center text-center w-full">
-            {/* Logo do lado esquerdo com tamanho dobrado */}
+            {/* Logo do lado esquerdo: logo_escura.png para fundo escuro */}
             <div className="relative w-full max-w-[560px] xl:max-w-[650px] h-60 xl:h-72 mb-4">
               <Image
-                src="/logo_semfundo_escritapreta_paramodoescuro.png"
+                src="/logo_escura.png"
                 alt="Janaina Carvalho Advocacia de Família"
                 fill
                 priority
-                className="object-contain object-center drop-shadow-md filter invert brightness-200"
+                unoptimized
+                className="object-contain object-center drop-shadow-md"
                 sizes="(min-width: 1280px) 650px, 560px"
               />
             </div>
